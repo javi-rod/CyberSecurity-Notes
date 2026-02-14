@@ -14,6 +14,8 @@ La **criptografía simétrica** es un método donde se utiliza la misma clave ta
 
 ![Proceso de Cifrado Simétrico](./img/01_cifrado_simetrico.png)
 
+---
+
 ### Comparativa de Algoritmos
 
 Algoritmo | Estado Actual | Notas |
@@ -35,6 +37,7 @@ Algoritmo | Estado Actual | Notas |
 
 • **Limitación (Escalabilidad)**: Si tienes 100 usuarios, necesitas casi 5,000 claves únicas para que todos hablen entre sí de forma privada.
 
+---
 
 ### Ejemplos Prácticos (Comandos)
 
@@ -77,6 +80,8 @@ openssl aes-256-cbc -pbkdf2 -iter 10000 -e -in mensaje.txt -out mensaje.enc
 openssl aes-256-cbc -pbkdf2 -iter 10000 -d -in mensaje.enc -out mensaje_recuperado.txt
 ```
 
+---
+
 ## Criptografía Asimétrica (Clave Pública)
 
 A diferencia de la simétrica, aquí no necesitas un canal seguro para intercambiar claves, solo uno confiable (que asegure la integridad). Se basa en un **par de llaves** matemáticamente relacionadas:
@@ -87,15 +92,15 @@ A diferencia de la simétrica, aquí no necesitas un canal seguro para intercamb
 
 ![Proceso de Cifrado Asimétrico](./img/02_cifrado_asimetrico.png)
 
+---
+
 ### ¿Cómo funciona el par?
 
 1)  Si **cifras con la pública** de alguien, solo su **privada puede descifrarlo** (**Confidencialidad**).
 
 2)  Si **cifras con tu privada**, cualquiera con tu **pública puede descifrarlo** (**Autenticidad/Firma**).
 
-
 ### Objetivos de Seguridad Logrados
-
 
  Objetivo | Método | Resultado |
 | :--- | :--- | :--- |
@@ -104,6 +109,7 @@ A diferencia de la simétrica, aquí no necesitas un canal seguro para intercamb
 | **Autenticidad** | Cifrar con la privada del emisor. | Prueba que el mensaje vino realmente de esa persona. |
 | **No repudio** | Uso exclusivo de la clave privada. | El emisor no puede negar haber enviado el mensaje. |
 
+---
 
 ### El Algoritmo RSA
 
