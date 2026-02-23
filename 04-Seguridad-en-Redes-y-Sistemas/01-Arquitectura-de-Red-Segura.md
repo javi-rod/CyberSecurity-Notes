@@ -1,4 +1,4 @@
-# 01. Arquitectura de Red Segura
+# Arquitectura de Red Segura
 
 Una red corporativa bien diseñada no solo permite la comunicación, sino que garantiza la **redundancia**, la **optimización** y la **seguridad**. El objetivo primordial es que, si un componente falla o es comprometido, el resto del entorno permanezca operativo y protegido.
 
