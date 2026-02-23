@@ -207,7 +207,7 @@ La autenticación basada en llaves es más robusta y cómoda. El proceso estánd
 * **Verificación**: Confirmar el acceso antes de deshabilitar las contraseñas para evitar el bloqueo del sistema (lockout).
 
 >[!CAUTION]
->Riesgo de Bloqueo: Nunca deshabilites PasswordAuthentication sin haber comprobado antes que tu llave SSH funciona correctamente o sin tener acceso físico al terminal.
+>**Riesgo de Bloqueo**: Nunca deshabilites `PasswordAuthentication` sin haber comprobado antes que tu llave SSH funciona correctamente o sin tener acceso físico al terminal.
 
 
 ## 5. Seguridad de Cuentas de Usuario
