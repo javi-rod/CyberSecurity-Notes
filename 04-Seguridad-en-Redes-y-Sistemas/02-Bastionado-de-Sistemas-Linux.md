@@ -33,6 +33,7 @@ Enter password:
 Reenter password: 
 PBKDF2 hash of your password is grub.pbkdf2.sha512.10000.534B77859C13DCF0...
 ```
+---
 
 ## 2. Cifrado de Disco: LUKS (Linux Unified Key Setup)
 
@@ -85,6 +86,8 @@ Para configurar una unidad cifrada desde cero, se siguen estos pasos técnicos:
 
 >[!TIP]
 >**Higiene de Datos:** Antes de formatear una unidad para uso seguro, es recomendable sobrescribir los datos viejos con ceros o datos aleatorios mediante `dd` para evitar la recuperación forense de fragmentos de datos no cifrados previos.
+
+---
 
 ## 3. Firewall del Sistema (Host-based Firewall)
 
@@ -159,6 +162,8 @@ La seguridad de un sistema depende de su política base (el comportamiento cuand
 > [!WARNING]
 > En administración de sistemas Linux, la **Whitelist** es el estándar de oro. Siempre se configura el firewall para descartar todo (`DROP`) y luego se abren "agujeros" específicos para SSH, HTTP o bases de datos.
 
+---
+
 ## 4. Acceso Remoto Seguro (SSH Hardening)
 
 El acceso remoto facilita la administración, pero expone el sistema a ataques de interceptación (*sniffing*), fuerza bruta y explotación de servicios.
@@ -209,6 +214,7 @@ La autenticación basada en llaves es más robusta y cómoda. El proceso estánd
 >[!CAUTION]
 >**Riesgo de Bloqueo**: Nunca deshabilites `PasswordAuthentication` sin haber comprobado antes que tu llave SSH funciona correctamente o sin tener acceso físico al terminal.
 
+---
 
 ## 5. Seguridad de Cuentas de Usuario
 
