@@ -2,6 +2,8 @@
 
 Una red corporativa bien diseñada no solo permite la comunicación, sino que garantiza la **redundancia**, la **optimización** y la **seguridad**. El objetivo primordial es que, si un componente falla o es comprometido, el resto del entorno permanezca operativo y protegido.
 
+---
+
 ## 1. Introducción y Objetivos de Diseño
 
 La seguridad de red busca evitar que un atacante que comprometa un activo (como un servidor web expuesto) pueda realizar un **movimiento lateral** hacia datos sensibles.
@@ -11,6 +13,8 @@ La seguridad de red busca evitar que un atacante que comprometa un activo (como 
 * **Aislamiento:** Garantizar que dispositivos de terceros o desconocidos (**BYOD**) no tengan visibilidad sobre los sistemas críticos.
 
 * **Segmentación Efectiva:** Diferenciar el tráfico de gestión, el de usuarios y el de servidores.
+
+---
 
 ## 2. Segmentación de Red (Network Segmentation)
 
@@ -68,7 +72,7 @@ set vlans vlan-10 vlan-id 10
 ```
 Referencia oficial: [Juniper Guía del usuario de conmutación Ethernet](https://www.juniper.net/documentation/mx/es/software/junos/multicast-l2/topics/topic-map/private-vlans.html)
 
-**Bloque 3: Comunicación y Advertencia**
+---
 
 ## 3. Comunicación Inter-VLAN: Router on a Stick (ROAS)
 
@@ -162,6 +166,8 @@ interface GigabitEthernet0/0
 
 Referencia oficial: [Cisco Catalyst 9300 ACLs](https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9300/software/release/17-14/configuration_guide/sec/b_1714_sec_9300_cg/configuring_ipv4_acls.html)
 
+---
+
 ## 7. Limitaciones del Filtrado en Routers
 
 Aunque las ACLs en routers son eficaces para el control de tráfico básico (**Capa 3 y 4**), presentan limitaciones importantes para una arquitectura de seguridad moderna:
@@ -174,6 +180,8 @@ Aunque las ACLs en routers son eficaces para el control de tráfico básico (**C
 
 >[!TIP]
 >Evolución: Para solucionar estas limitaciones, las arquitecturas seguras evolucionan del simple filtrado en routers hacia el uso de Firewalls de Próxima Generación (NGFW) y políticas basadas en zonas, que veremos en la siguiente sección.
+
+---
 
 ## 8. Firewalls y Políticas de Pares de Zonas (Zone-Pairs)
 
@@ -243,6 +251,8 @@ zone-pair security TRUST-TO-EXT source TRUSTED destination EXTERNAL
 > [!WARNING]
 > Es crítico recordar que las políticas deben configurarse tanto para IPv4 como para IPv6, ya que un atacante podría intentar evadir los controles de la zona a través de tráfico IPv6 si este no está monitorizado.
 
+---
+
 ## 9. Inspección SSL/TLS y UTM
 
 Incluso con una zonificación perfecta, un atacante puede ocultar tráfico malicioso (como un implante de phishing) dentro de conexiones cifradas (HTTPS). Para el firewall y los analistas, este tráfico parecerá legítimo a menos que se inspeccione su contenido.
@@ -279,6 +289,8 @@ Implementar inspección SSL convierte técnicamente al firewall en un **MitM (Ma
 
 > [!TIP]
 > **Estrategia Híbrida:** Muchas corporaciones optan por "listas blancas" (bypass), permitiendo que aplicaciones conocidas y seguras no sean inspeccionadas, centrando los recursos en el tráfico desconocido o de mayor riesgo.
+
+---
 
 ## 10. Seguridad en Capa 2: DHCP Snooping y DAI
 
