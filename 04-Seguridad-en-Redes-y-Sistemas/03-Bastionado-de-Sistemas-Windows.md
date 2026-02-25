@@ -2,6 +2,8 @@
 
 El bastionado de Windows es el proceso de asegurar una estación de trabajo mediante la reducción de su superficie de ataque, configurando de forma restrictiva identidades, redes, aplicaciones y almacenamiento. El endurecimiento del sistema se basa en la gestión crítica de sus componentes principales para evitar brechas de datos o ejecuciones maliciosas.
 
+---
+
 ## 1. Conceptos Generales del Sistema
 
 ### Servicios de Windows (`services.msc`)
