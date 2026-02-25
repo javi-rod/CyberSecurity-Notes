@@ -46,8 +46,6 @@ Las VLANs segmentan la red en la **Capa 2 (Enlace de datos)**. Permiten agrupar 
 
 * **VID (VLAN ID)**: El campo más importante (12 bits). Aquí es donde se guarda el "número" de la VLAN (del 1 al 4094). Es lo que permite que tu tráfico de la VLAN 10 esté separado del de la VLAN 20 en el mismo cable.
 
----
-
 ### Configuración Estándar (Ejemplos de Industria)
 
 #### A. Cisco (Cisco IOS)
