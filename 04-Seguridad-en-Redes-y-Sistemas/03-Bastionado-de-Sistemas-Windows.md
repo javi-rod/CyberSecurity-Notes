@@ -205,6 +205,8 @@ El navegador es a menudo el punto de entrada para el movimiento lateral y el mal
 
 ![Configurar Tracking prevention en Strict](./img/27_tracking_prevention.png)
 
+---
+
 ## 5. Storage & Compute
 
 La seguridad del almacenamiento y del proceso de arranque garantiza la integridad de los datos en reposo y la confianza en el software que se ejecuta desde el encendido del equipo.
@@ -282,6 +284,8 @@ La instalación inmediata de parches de seguridad es vital para cerrar brechas a
 
 ![Windows Update](./img/33_win_update.png)
 
+---
+
 ## 7. Resumen de Herramientas para el Bastionado
 
 | Herramienta | Comando / Ruta | Función Principal |
@@ -293,6 +297,8 @@ La instalación inmediata de parches de seguridad es vital para cerrar brechas a
 | **Directiva de Grupo** | `gpedit.msc` | Aplicación de políticas de seguridad (Pro/Ent). |
 | **Información Sistema** | `msinfo32` | Verificación del estado de Secure Boot. |
 | **PowerShell (Admin)** | `Disable-WindowsOptionalFeature` | Desactivación de protocolos como SMBv1. |
+
+---
 
 ## 8. Resumen Visual de Bastionado (Cheat Sheet)
 
