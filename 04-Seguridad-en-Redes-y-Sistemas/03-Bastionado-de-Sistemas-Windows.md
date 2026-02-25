@@ -44,6 +44,7 @@ Repositorio centralizado de logs que registra todo lo que ocurre en el equipo. L
 Sistema de recolección de datos de Microsoft operado por el servicio **Connected User Experiences and Telemetry** (técnicamente `DiagTrack` vía `diagtrack.dll`). Los datos se cifran en `%ProgramData%\Microsoft\Diagnosis` antes de enviarse. En sistemas bastionados, este servicio se limita o desactiva para prevenir la exposición de metadatos operativos.
 
 ![Carpeta de Telemetría](./img/12_telemetry.png)
+
 ---
 
 ## 2. Identity & Access Management (IAM)
