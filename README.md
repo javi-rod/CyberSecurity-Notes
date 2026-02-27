@@ -1,4 +1,3 @@
 # 🛡️ CyberSecurity Notes
 
-¡Bienvenido a mi base de conocimientos! Este repositorio es una mezcla de **apuntes teóricos**, **diagramas explicativos** y **chuletas (cheatsheets)** de comandos.
-
+Este repositorio recopila apuntes técnicos, diagramas explicativos y cheatsheets de comandos, sintetizados de diversas plataformas de formación (como TryHackMe) y documentación oficial.
