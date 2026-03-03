@@ -159,7 +159,9 @@ El acceso administrativo es el objetivo principal de un atacante para compromete
 
 * **Cambio de Credenciales por Defecto:** Regla número uno. Las bases de datos de contraseñas de fábrica son públicas; el uso de credenciales por defecto equivale a dejar la puerta abierta.
 
-* **Protocolos de Gestión Seguros:** * **Deshabilitar HTTP/Telnet:** Forzar el uso de **HTTPS** y **SSH**.
+* **Protocolos de Gestión Seguros:** 
+
+    * **Deshabilitar HTTP/Telnet:** Forzar el uso de **HTTPS** y **SSH**.
 
     * **Acceso por Llave Pública (SSH Keys):** Siempre que el dispositivo lo permita, priorizar el login mediante llaves SSH en lugar de solo contraseñas.
 
